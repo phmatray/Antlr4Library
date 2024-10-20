@@ -5,7 +5,7 @@
     "Common",
     "Library",
     "Antlr4",
-    "v1.0.1"
+    "v1.0.2"
   ],
   "groupIdentity": "Atypical.Antlr4Library",
   "identity": "Atypical.Antlr4Library.CSharp",
