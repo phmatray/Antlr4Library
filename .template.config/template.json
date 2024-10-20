@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Philippe Matray",
+  "classifications": [
+    "Common",
+    "Library",
+    "Antlr4"
+  ],
+  "identity": "Atypical.Antlr4Library",
+  "name": "Antlr4 Library",
+  "shortName": "antlr4",
+  "sourceName": "Antlr4Library",
+  "preferNameDirectory": true,
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
