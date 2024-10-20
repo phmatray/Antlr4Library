@@ -38,7 +38,7 @@ This template includes:
 Install the template using the `dotnet new` command:
 
 ```bash
-dotnet new --install Atypical.Antlr4Library.Templates
+dotnet new install Atypical.Antlr4Library.Templates
 ```
 
 ## Usage
@@ -50,6 +50,12 @@ dotnet new antlr4 -n YourProjectName
 ```
 
 This command creates a new directory `YourProjectName` with the template contents.
+
+### With JetBrains Rider or Visual Studio
+
+![With JetBrains Rider](./assets/new-project-rider.png)
+
+You can create a new project using JetBrains Rider or Visual Studio by selecting the `Antlr4 Library` template from the project creation dialog.
 
 ## Project Structure
 
@@ -99,34 +105,37 @@ Developed and maintained by [Philippe Matray](https://www.linkedin.com/in/phmatr
 1. **Install the Template**
 
    ```bash
-   dotnet new --install Atypical.Antlr4Library.Templates
+   dotnet new install Atypical.Antlr4Library.Templates
    ```
 
-2. **Create a New Project**
+2. **Create a New Solution**
 
    ```bash
-   dotnet new atypical-antlr4 -n MyAntlrProject
+   mkdir AntlrDemo
+   cd AntlrDemo
+   dotnet new sln -n MyAntlrSolution
    ```
 
-3. **Build the Project**
+3. **Create a New Antlr4 Project**
 
-   Navigate to the project directory and build:
-    
    ```bash
-   cd MyAntlrProject
-   dotnet build
+   dotnet new antlr4 -n MyAntlrLibrary
+   dotnet sln add MyAntlrLibrary
    ```
 
-4. **(optional) Create a Console Application with the demo code**
+4. **Create a Console Application with the demo code**
 
    ```bash
    dotnet new console -n MyAntlrApp
-   dotnet add MyAntlrApp reference MyAntlrProject
+   dotnet add MyAntlrApp reference MyAntlrLibrary
+   dotnet sln add MyAntlrApp
    ```
     
    Replace the contents of `Program.cs` with the following code:
     
    ```csharp
+   using MyAntlrLibrary.Services;
+
    const string csvInput =
        """"
        Details,Month,Amount
@@ -134,17 +143,23 @@ Developed and maintained by [Philippe Matray](https://www.linkedin.com/in/phmatr
        ,January,"""zippo"""
        Total Bonuses,"","$5,000"
        """";
-   
+    
    var service = new CSVService();
-   var csvModel = service.Parse(csvInput);
-   
-   WriteLine(string.Join(", ", csv.Header));
-   WriteLine("---------------------");
-   
+   var csv = service.Parse(csvInput);
+    
+   Console.WriteLine(string.Join(", ", csv.Header));
+   Console.WriteLine("---------------------");
+    
    foreach (var row in csv.Rows)
    {
-       WriteLine(string.Join(", ", row));
+       Console.WriteLine(string.Join(", ", row));
    }
+   ```
+   
+   Then build and run the application:
+    
+   ```bash
+   dotnet run --project MyAntlrApp
    ```
     
    You should see the parsed CSV output in the console.
