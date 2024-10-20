@@ -53,7 +53,7 @@ This command creates a new directory `YourProjectName` with the template content
 
 ### With JetBrains Rider or Visual Studio
 
-![With JetBrains Rider](./assets/new-project-rider.png)
+![With JetBrains Rider](https://raw.githubusercontent.com/phmatray/Antlr4Library/refs/heads/main/assets/new-project-rider.png)
 
 You can create a new project using JetBrains Rider or Visual Studio by selecting the `Antlr4 Library` template from the project creation dialog.
 
