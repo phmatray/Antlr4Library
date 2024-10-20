@@ -100,6 +100,12 @@ Developed and maintained by [Philippe Matray](https://www.linkedin.com/in/phmatr
 
 ---
 
+## What is Antlr4?
+
+Created by Terence Parr, [Antlr4](https://www.antlr.org/) is a powerful parser generator for reading, processing, executing, or translating structured text or binary files. It's widely used to build language parsers, interpreters, and compilers for various programming languages and data formats.
+
+It has been around for many years and has a large community of users and contributors. Antlr4 is available for multiple programming languages, including Java, C#, Python, and JavaScript.
+
 ## Quick Start Guide
 
 1. **Install the Template**
