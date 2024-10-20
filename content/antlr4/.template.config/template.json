@@ -4,11 +4,14 @@
   "classifications": [
     "Common",
     "Library",
-    "Antlr4"
+    "Antlr4",
+    "v1.0.1"
   ],
-  "identity": "Atypical.Antlr4Library",
+  "groupIdentity": "Atypical.Antlr4Library",
+  "identity": "Atypical.Antlr4Library.CSharp",
   "name": "Antlr4 Library",
   "shortName": "antlr4",
+  "defaultName": "Antlr4Library",
   "sourceName": "Antlr4Library",
   "preferNameDirectory": true,
   "tags": {

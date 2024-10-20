@@ -46,7 +46,7 @@ dotnet new --install Atypical.Antlr4Library.Templates
 Create a new project using the template:
 
 ```bash
-dotnet new atypical-antlr4 -n YourProjectName
+dotnet new antlr4 -n YourProjectName
 ```
 
 This command creates a new directory `YourProjectName` with the template contents.
