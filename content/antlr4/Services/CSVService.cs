@@ -40,12 +40,15 @@ public class CSVService
         var csv = Parse(csvInput);
         
         // After parsing, you can print the CSV data to the console for demonstration purposes
-        // WriteLine(string.Join(", ", csv.Header));
-        // WriteLine("---------------------");
+        // var service = new CSVService();
+        // var csv = service.Parse(csvInput);
+        //
+        // Console.WriteLine(string.Join(", ", csv.Header));
+        // Console.WriteLine("---------------------");
         //
         // foreach (var row in csv.Rows)
         // {
-        //     WriteLine(string.Join(", ", row));
+        //     Console.WriteLine(string.Join(", ", row));
         // }
         
         return csv;

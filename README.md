@@ -57,6 +57,8 @@ This command creates a new directory `YourProjectName` with the template content
 
 You can create a new project using JetBrains Rider or Visual Studio by selecting the `Antlr4 Library` template from the project creation dialog.
 
+For color syntax highlighting and code completion, install the [ANTLR v4](https://plugins.jetbrains.com/plugin/7358-antlr-v4) plugin by Terence Parr.
+
 ## Project Structure
 
 - `Grammar/CSV.g4`: The Antlr4 grammar file for CSV parsing.

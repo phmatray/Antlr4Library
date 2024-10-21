@@ -5,11 +5,12 @@
     "Common",
     "Library",
     "Antlr4",
-    "v1.0.2"
+    "v1.0.3"
   ],
   "groupIdentity": "Atypical.Antlr4Library",
   "identity": "Atypical.Antlr4Library.CSharp",
   "name": "Antlr4 Library",
+  "description": "Creates a new Antlr4 library project.",
   "shortName": "antlr4",
   "defaultName": "Antlr4Library",
   "sourceName": "Antlr4Library",
