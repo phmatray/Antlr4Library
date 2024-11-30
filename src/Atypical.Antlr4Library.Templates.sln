@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atypical.Antlr4Library.Templates", "Atypical.Antlr4Library.Templates.csproj", "{DB484012-47DA-4AED-B102-8FB143E81B9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_build", "..\build\_build.csproj", "{9C55D406-1BBF-4200-B9F9-0966FFAE4747}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB484012-47DA-4AED-B102-8FB143E81B9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB484012-47DA-4AED-B102-8FB143E81B9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB484012-47DA-4AED-B102-8FB143E81B9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB484012-47DA-4AED-B102-8FB143E81B9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C55D406-1BBF-4200-B9F9-0966FFAE4747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C55D406-1BBF-4200-B9F9-0966FFAE4747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C55D406-1BBF-4200-B9F9-0966FFAE4747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C55D406-1BBF-4200-B9F9-0966FFAE4747}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
