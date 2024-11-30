@@ -2,17 +2,18 @@
 
   <PropertyGroup>
     <PackageId>Atypical.Antlr4Library.Templates</PackageId>
-    <PackageVersion>1.0.3</PackageVersion>
+    <PackageVersion>1.1.0</PackageVersion>
     <Title>Atypical Antlr4 Library Templates</Title>
     <Authors>Philippe Matray</Authors>
     <Description>A .NET template for creating Antlr4 projects in C#, including a sample CSV parser.</Description>
     <Copyright>Copyright 2024 Atypical Consulting SRL</Copyright>
+    <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/phmatray/Antlr4Library.git</RepositoryUrl>
     <PackageTags>antlr4;parser;C#;CSV;Atypical</PackageTags>
     <PackageProjectUrl>https://www.atypical.consulting</PackageProjectUrl>
     
     <PackageType>Template</PackageType>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
@@ -32,14 +33,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="content\**\*" Exclude="content\**\bin\**;content\**\obj\**" />
-    <Compile Remove="**\*" />
+    <None Include="..\README.md" Pack="true" PackagePath="" />
+    <None Include="..\LICENSE" Pack="true" Visible="false" PackagePath=""/>
+    <None Include="..\logo.png" Pack="true" Visible="false" PackagePath=""/>
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="README.md" Pack="true" PackagePath="" />
-    <None Include="LICENSE" Pack="true" PackagePath=""/>
-    <None Include="logo.png" Pack="true" PackagePath=""/>
+    <Content Include="antlr4\**\*" Exclude="antlr4\**\bin\**;antlr4\**\obj\**" />
+    <Compile Remove="**\*" />
   </ItemGroup>
 
 </Project>

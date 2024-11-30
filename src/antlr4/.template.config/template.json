@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Philippe Matray",
+  "classifications": [
+    "Common",
+    "Library",
+    "Antlr4",
+    "v1.1.0"
+  ],
+  "name": "Antlr4 Library",
+  "defaultName": "Antlr4Library",
+  "description": "Creates a new Antlr4 library project.",
+  "groupIdentity": "Atypical.Antlr4Library",
+  "identity": "Atypical.Antlr4Library.CSharp",
+  "thirdPartyNotices": "",
+  "preferNameDirectory": true,
+  "shortName": "antlr4",
+  "sourceName": "Antlr4Library",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "description": "The target framework for the project.",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "net9.0",
+          "description": "Target .NET 9.0"
+        },
+        {
+          "choice": "net8.0",
+          "description": "Target .NET 8.0"
+        }
+      ],
+      "replaces": "net9.0",
+      "defaultValue": "net9.0"
+    },
+    "skipRestore": {
+      "type": "parameter",
+      "description": "Do not restore NuGet packages required by this project.",
+      "datatype": "bool",
+      "defaultValue": false
+    }
+  },
+  "postActions": [
+    {
+      "id": "restore",
+      "condition": "(!skipRestore)",
+      "description": "Restore NuGet packages required by this project.",
+      "manualInstructions": [
+        {
+          "text": "Run 'dotnet restore'"
+        }
+      ],
+      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+      "continueOnError": true
+    }
+  ]
+}
