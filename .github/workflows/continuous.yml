@@ -18,6 +18,9 @@ name: continuous
 
 on: [push]
 
+permissions:
+  contents: read
+
 jobs:
   ubuntu-latest:
     name: ubuntu-latest
