@@ -1,5 +1,10 @@
 # Atypical Antlr4 Library Template
 
+[![NuGet](https://img.shields.io/nuget/v/Atypical.Antlr4Library.Templates)](https://www.nuget.org/packages/Atypical.Antlr4Library.Templates)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/Atypical.Antlr4Library.Templates)](https://www.nuget.org/packages/Atypical.Antlr4Library.Templates)
+[![Build](https://github.com/phmatray/Antlr4Library/actions/workflows/continuous.yml/badge.svg)](https://github.com/phmatray/Antlr4Library/actions/workflows/continuous.yml)
+[![License](https://img.shields.io/github/license/phmatray/Antlr4Library)](LICENSE)
+
 A .NET template for creating Antlr4 projects in C#, including a sample CSV parser. This template provides a starting point for building language parsers or interpreters using Antlr4 in a C# environment.
 
 ## Table of Contents
