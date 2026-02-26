@@ -21,6 +21,10 @@ on:
     tags:
       - '\d+\.\d+\.\d+'
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   ubuntu-latest:
     name: ubuntu-latest
