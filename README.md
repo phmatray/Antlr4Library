@@ -1,3 +1,5 @@
+![Antlr4Library banner](.github/banner.png)
+
 # Atypical Antlr4 Library Template
 
 [![NuGet](https://img.shields.io/nuget/v/Atypical.Antlr4Library.Templates)](https://www.nuget.org/packages/Atypical.Antlr4Library.Templates)
