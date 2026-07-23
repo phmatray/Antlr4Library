@@ -95,6 +95,19 @@ Modify `CSVVisitor.cs` to implement custom logic for traversing the parse tree g
 
 Use `CSVService.cs` as a reference to create your own service classes for parsing different types of data.
 
+<!-- portfolio-techstack:start -->
+
+## Tech Stack
+
+- **.NET 10**
+- Nuke.Common
+- System.Runtime.Serialization.Formatters
+- Microsoft.TemplateEngine.Tasks
+- Antlr4BuildTasks
+- Antlr4.Runtime.Standard
+
+<!-- portfolio-techstack:end -->
+
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request to the repository.
