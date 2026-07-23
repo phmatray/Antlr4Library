@@ -108,6 +108,16 @@ Use `CSVService.cs` as a reference to create your own service classes for parsin
 
 <!-- portfolio-techstack:end -->
 
+## Roadmap
+
+- [ ] Add more sample grammars beyond CSV (e.g. JSON, a small expression language)
+- [ ] Broaden target framework support alongside .NET 10
+- [ ] Add unit tests to the generated template project
+- [ ] Expand the customization guide with a worked example of a new grammar end-to-end
+- [ ] Publish versioned release notes alongside NuGet releases
+
+Track progress and proposals in the [open issues](https://github.com/phmatray/Antlr4Library/issues).
+
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request to the repository.
