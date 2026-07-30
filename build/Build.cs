@@ -11,9 +11,20 @@ using static Nuke.Common.Tools.DotNet.DotNetTasks;
 
 // ReSharper disable AllUnderscoreLocalParameterName
 
+// AutoGenerate = false : les workflows sous .github/workflows/ sont desormais la
+// SOURCE, et non plus un artefact regenere. Sans ce reglage, N'IMPORTE QUELLE cible
+// Nuke (y compris `./build.sh --help`) reecrit continuous.yml et release.yml et
+// ECRASE trois choses qui ne viennent pas du generateur :
+//   - les versions d'actions montees par Renovate (cache v5 -> v4, upload-artifact v7 -> v5) ;
+//   - le bloc `permissions: contents: read` (moindre privilege) ;
+//   - l'etape `Setup dotnet` qui epingle les SDK 8.0.x et 9.0.x.
+// Renovate a modifie continuous.yml 4 fois : son travail etait annule en silence.
+// Corollaire : une modification de ces attributs ne se propage plus toute seule,
+// il faut editer les .yml a la main -- c'est le prix, et c'est le but.
 [GitHubActions(
     "continuous",
     GitHubActionsImage.UbuntuLatest,
+    AutoGenerate = false,
     FetchDepth = 0,
     On = [GitHubActionsTrigger.Push],
     PublishArtifacts = true,
@@ -21,6 +32,7 @@ using static Nuke.Common.Tools.DotNet.DotNetTasks;
 [GitHubActions(
     "release",
     GitHubActionsImage.UbuntuLatest,
+    AutoGenerate = false,
     FetchDepth = 0,
     OnPushTags = [@"\d+\.\d+\.\d+"],
     PublishArtifacts = true,
